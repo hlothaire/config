@@ -206,10 +206,10 @@ client.placeholder      #000000 #0c0c0c #ffffff #000000   #0c0c0c
 client.background       #ffffff
 
 exec_always nitrogen --restore
-exec_always "setxkbmap -layout us,fr"
-exec_always "setxkbmap -option 'grp:alt_shift_toggle'"
+exec_always --no-startup-id setxkbmap fr
 exec_always --no-startup-id "picom --config /home/lothaire/.config/picom/picom.conf"
 
+bindsym $mod+Shift+s exec gnome-screenshot -a
 
 
 default_border pixel
