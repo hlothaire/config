@@ -41,7 +41,7 @@ bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOU
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec alacritty -e tmux
+bindsym $mod+Return exec /home/lothaire/.local/kitty.app/bin/kitty
 
 # kill focused window
 bindsym $mod+Shift+A kill
@@ -210,6 +210,7 @@ exec_always --no-startup-id setxkbmap fr
 exec_always --no-startup-id "picom --config /home/lothaire/.config/picom/picom.conf"
 
 bindsym $mod+Shift+s exec gnome-screenshot -a
+bindsym $mod+p exec rofi -show drun
 
 
 default_border pixel
